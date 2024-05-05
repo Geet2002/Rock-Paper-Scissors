@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat&family=Noto+Sans:wght@100&family=Poetsen+One&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: #112;
+    color: #fff;
+}
+
+#leftBox{
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10vh;
+}
+#rightBox{
+    padding: 0 3vh;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#leftBox h1{
+    padding-top: 15vh;
+    font-size: 40px;
+    width: 100%;
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#leftBox h3{
+    padding-top: 1rem;
+}
+
+#content-container{
+    height: 70vh;
+    background-color: #99999936;
+    display: inline-block;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+#comp-part{
+    height: 120px;
+    position: relative;
+    margin-top: 3vh;
+}
+
+#user-part{
+    margin-top: 3vh;
+    padding-top: 1.5rem;
+}
+
+.compChoices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 0.3rem;
+}
+
+.compChoice{
+    margin-top: 8rem;
+    position: absolute;
+    opacity: 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+    /* background-color: aquamarine; */
+}
+
+.compChoice img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+.choice{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+    /* background-color: aquamarine; */
+}
+
+.choice:hover{
+    background-color: #fff;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.choice img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+}
+
+#user-part h2{
+    margin-top: 1.5rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.msg-container{
+    margin-top: 2.3rem;
+}
+
+#msg{
+    background-color: #99999936;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+}
